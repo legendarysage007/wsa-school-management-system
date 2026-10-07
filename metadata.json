@@ -1,0 +1,6 @@
+{
+  "name": "Wisdom Scholars Academy - School Portal",
+  "description": "Production-quality, role-based school management portal for Wisdom Scholars Academy (Ghana), serving Creche through JHS 3 with unified academic, attendance, report publishing, and parent workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

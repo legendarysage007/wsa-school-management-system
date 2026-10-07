@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" width="100%" height="100%">
+  <!-- Definitions -->
+  <defs>
+    <!-- Path for curved WISDOM SCHOLARS text -->
+    <path id="archPath" d="M 130 145 Q 250 95 370 145" fill="none" />
+    <path id="ribbonPath" d="M 120 495 Q 250 535 380 495" fill="none" />
+  </defs>
+
+  <!-- Outer Shield Outline -->
+  <!-- Outer Blue Border -->
+  <path d="M 250 35 
+           C 310 35 395 55 425 105 
+           C 405 135 390 190 395 240 
+           C 405 320 345 405 250 455 
+           C 155 405 95 320 105 240 
+           C 110 190 95 135 75 105 
+           C 105 55 190 35 250 35 Z" 
+        fill="#ffffff" 
+        stroke="#0d52e6" 
+        stroke-width="12" 
+        stroke-linejoin="round" />
+
+  <!-- Inner Trim Line -->
+  <path d="M 250 48 
+           C 305 48 385 67 412 112 
+           C 394 140 380 192 385 238 
+           C 394 310 338 390 250 438 
+           C 162 390 106 310 115 238 
+           C 120 192 106 140 88 112 
+           C 115 67 195 48 250 48 Z" 
+        fill="none" 
+        stroke="#0d52e6" 
+        stroke-width="3" />
+
+  <!-- WISDOM SCHOLARS Text -->
+  <text font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+        font-size="28" 
+        font-weight="900" 
+        fill="#0d52e6" 
+        letter-spacing="2">
+    <textPath href="#archPath" startOffset="50%" text-anchor="middle">
+      WISDOM SCHOLARS
+    </textPath>
+  </text>
+
+  <!-- Inner Shield Group -->
+  <g>
+    <!-- Clip Path for Quartered Inner Shield -->
+    <clipPath id="innerShieldClip">
+      <path d="M 145 135 
+               L 355 135 
+               C 365 230 345 315 250 365 
+               C 155 315 135 230 145 135 Z" />
+    </clipPath>
+
+    <!-- Quadrants with clipping -->
+    <g clip-path="url(#innerShieldClip)">
+      <!-- Top Left: Royal Blue -->
+      <rect x="135" y="125" width="115" height="120" fill="#0d52e6" />
+      <!-- Top Right: Bright Gold / Yellow -->
+      <rect x="250" y="125" width="125" height="120" fill="#ffde00" />
+      <!-- Bottom Left: Bright Gold / Yellow -->
+      <rect x="135" y="245" width="115" height="135" fill="#ffde00" />
+      <!-- Bottom Right: Royal Blue -->
+      <rect x="250" y="245" width="125" height="135" fill="#0d52e6" />
+
+      <!-- Center Cross Divider Lines -->
+      <line x1="250" y1="125" x2="250" y2="380" stroke="#0035a8" stroke-width="3" />
+      <line x1="135" y1="245" x2="375" y2="245" stroke="#0035a8" stroke-width="3" />
+
+      <!-- Top Right Quadrant Icon: Graduation Cap & Diploma Scroll -->
+      <g transform="translate(255, 135)">
+        <!-- Mortarboard Cap (Blue) -->
+        <polygon points="50,18 85,32 50,46 15,32" fill="#0d52e6" stroke="#002b8a" stroke-width="2" />
+        <path d="M 32,39 L 32,54 C 32,60 68,60 68,54 L 68,39 Z" fill="#0d52e6" />
+        <!-- Tassel (Cyan/Sky Blue) -->
+        <circle cx="50" cy="32" r="3" fill="#00d5ff" />
+        <path d="M 50,32 Q 74,38 72,56" fill="none" stroke="#00d5ff" stroke-width="2.5" />
+        <rect x="70" y="54" width="4" height="8" rx="1" fill="#00d5ff" />
+
+        <!-- Diploma Scroll (White with Blue ribbon) -->
+        <g transform="translate(18, 62)">
+          <path d="M 12 18 C 10 12, 55 5, 58 12 C 60 18, 15 25, 12 18 Z" fill="#ffffff" stroke="#002b8a" stroke-width="2" />
+          <ellipse cx="12" cy="18" rx="4" ry="7" fill="#f0f4ff" stroke="#002b8a" stroke-width="2" />
+          <!-- Ribbon Bow -->
+          <circle cx="34" cy="15" r="3" fill="#002b8a" />
+          <path d="M 34 16 Q 30 26 26 28 M 34 16 Q 38 26 42 28" stroke="#002b8a" stroke-width="2" fill="none" />
+        </g>
+      </g>
+
+      <!-- Bottom Left Quadrant Icon: Open Book (White pages with blue lines) -->
+      <g transform="translate(150, 255)">
+        <!-- Book Left Page -->
+        <path d="M 45 42 C 30 35, 10 37, 5 40 L 5 80 C 10 77, 30 75, 45 82 Z" fill="#ffffff" stroke="#002b8a" stroke-width="2.5" />
+        <!-- Book Right Page -->
+        <path d="M 45 42 C 60 35, 80 37, 85 40 L 85 80 C 80 77, 60 75, 45 82 Z" fill="#ffffff" stroke="#002b8a" stroke-width="2.5" />
+        <!-- Page Spine / Curve -->
+        <path d="M 45 42 L 45 82" stroke="#002b8a" stroke-width="2.5" />
+        <!-- Page lines Left -->
+        <path d="M 12 48 C 22 46, 35 46, 40 50 M 12 56 C 22 54, 35 54, 40 58 M 12 64 C 22 62, 35 62, 40 66 M 12 72 C 22 70, 35 70, 40 74" 
+              stroke="#002b8a" stroke-width="1.5" stroke-linecap="round" fill="none" />
+        <!-- Page lines Right -->
+        <path d="M 78 48 C 68 46, 55 46, 50 50 M 78 56 C 68 54, 55 54, 50 58 M 78 64 C 68 62, 55 62, 50 66 M 78 72 C 68 70, 55 70, 50 74" 
+              stroke="#002b8a" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      </g>
+    </g>
+
+    <!-- Inner Shield Outer Border -->
+    <path d="M 145 135 
+             L 355 135 
+             C 365 230 345 315 250 365 
+             C 155 315 135 230 145 135 Z" 
+          fill="none" 
+          stroke="#0d52e6" 
+          stroke-width="5" />
+  </g>
+
+  <!-- ACADEMY Text Below Inner Shield -->
+  <text x="250" y="405" 
+        text-anchor="middle" 
+        font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+        font-size="28" 
+        font-weight="900" 
+        fill="#0d52e6" 
+        letter-spacing="2">
+    ACADEMY
+  </text>
+
+  <!-- Bottom Blue Ribbon Banner -->
+  <g id="mottoRibbon">
+    <!-- Ribbon Tail Left -->
+    <path d="M 65 440 L 105 400 L 95 450 L 125 460 L 65 480 Z" fill="#0d52e6" stroke="#0035a8" stroke-width="2" />
+    <!-- Ribbon Tail Right -->
+    <path d="M 435 440 L 395 400 L 405 450 L 375 460 L 435 480 Z" fill="#0d52e6" stroke="#0035a8" stroke-width="2" />
+
+    <!-- Ribbon Main Body (Curved White banner with Blue Border) -->
+    <path d="M 90 455 Q 250 500 410 455 L 425 490 Q 250 545 75 490 Z" 
+          fill="#ffffff" 
+          stroke="#0d52e6" 
+          stroke-width="5" 
+          stroke-linejoin="round" />
+
+    <!-- Motto Text: WISDOM ABOVE WEALTH -->
+    <text font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+          font-size="22" 
+          font-weight="900" 
+          fill="#0d52e6" 
+          letter-spacing="3">
+      <textPath href="#ribbonPath" startOffset="50%" text-anchor="middle">
+        WISDOM ABOVE WEALTH
+      </textPath>
+    </text>
+  </g>
+</svg>
